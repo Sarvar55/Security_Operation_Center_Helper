@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class AppConstant {
-    public final static String IP_URLS_PATH = "D:\\EasySoc\\src\\main\\java\\com\\example\\easysoc\\files\\IpUrls.txt";
-    public final static String DOMAIN_URL_PATH = "D:\\EasySoc\\src\\main\\java\\com\\example\\easysoc\\files\\domainUrls.txt";
-    public final static String HASH_URL_PATH = "D:\\EasySoc\\src\\main\\java\\com\\example\\easysoc\\files\\hashUrls.txt";
+    public final static String IP_URLS_PATH = "IpUrls.txt";
+    public final static String DOMAIN_URL_PATH = "domainUrls.txt";
+    public final static String HASH_URL_PATH = "hashUrls.txt";
     public final static String HASH_CONTROL_TEXT = "SHA256 hash";
     public static final String DOMAIN_NAME_PATTERN = "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,6}$";
 }
