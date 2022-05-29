@@ -20,11 +20,7 @@ import java.util.Collections;
 
 @SpringBootApplication
 public class EasySocApplication implements CommandLineRunner {
-    @Autowired
-    private IpAddressServiceImpl service;
 
-    @Autowired
-    private UrlRepository repository;
 
     public static void main(String[] args) {
         SpringApplication.run(EasySocApplication.class, args);
@@ -36,25 +32,4 @@ public class EasySocApplication implements CommandLineRunner {
 
     }
 
-
-    @Bean
-    void testUrl() {
-        JSONObject urlDetails = new JSONObject();
-        JSONObject object = new JSONObject();
-        JSONArray jsonArray = new JSONArray();
-        int index = 0;
-        String[] urls = null;
-        if (repository.getAllIpAddress().isPresent()) {
-            for (String url : repository.getAllHashAddress().get()) {
-//                urlDetails.put("fullpath", url.concat("585858"));
-//                urlDetails.put("website", urlDetails.put("url", url.concat("475747")));
-//                jsonArray.add(urlDetails);
-//                System.out.println(jsonArray.toJSONString());
-
-                System.out.println(url.replaceAll(AppConstant.HASH_CONTROL_TEXT, "jfksjn"));
-
-
-            }
-        }
-    }
 }
